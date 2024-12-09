@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Top Header</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+  <!-- Owl Carousel CSS -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+/>
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <style>
+      
+    </style>
+</head>
+<body>
+    <!-- Top Header -->
+    <header class="top-header d-flex justify-content-between align-items-center">
+        <!-- Left Side: Phone Number -->
+        <div class="phone-number text-white">
+            <a href="tel:+911234567890">
+                <i class="fas fa-phone-alt me-2"></i>+91 12345 67890
+            </a>
+        </div>
+        <!-- Right Side: Social Icons -->
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="main-banner-2-1750x820 (1).jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Kashmiri Shawl.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="images/Untitled design (10).png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Bootstrap JS -->
+
+
+    <!-- card section -->
+    <div class="container my-5">
+        <div class="row g-4">
+          <!-- Left Image Card with Overlay -->
+          <div class="col-lg-6 d-flex align-items-stretch">
+            <div class="card left-card">
+              <img src="https://via.placeholder.com/600x400" alt="Large Image">
+              <div class="overlay-text">
+                <h1>Beautiful Kashmiri Shawls</h1>
+                <p>Discover the elegance and heritage</p>
+              </div>
+            </div>
+          </div>
+          <!-- Right Two Rows of Cards -->
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-6 col-md-6">
+                <div class="card small-card">
+                  <img src="https://via.placeholder.com/300x200" alt="Card Image">
+                  <div class="overlay-text">
+                    <h5>Shawl Design 1</h5>
+                    <button>View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="card small-card">
+                  <img src="https://via.placeholder.com/300x200" alt="Card Image">
+                  <div class="overlay-text">
+                    <h5>Shawl Design 2</h5>
+                    <button>View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="card small-card">
+                  <img src="https://via.placeholder.com/300x200" alt="Card Image">
+                  <div class="overlay-text">
+                    <h5>Shawl Design 3</h5>
+                    <button>View Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col-6 col-md-6">
+                <div class="card small-card">
+                  <img src="https://via.placeholder.com/300x200" alt="Card Image">
+                  <div class="overlay-text">
+                    <h5>Shawl Design 4</h5>
+                    <button>View Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    
+
+      <!-- img button show -->
+      <div class="container my-5">
+        <h2 class="text-center mb-4">Our Collection</h2>
+        
+        <!-- Button Group -->
+        <div class="button-group text-center mb-4">
+          <button class="btn btn-primary" onclick="showImages('featured')">Featured</button>
+          <button class="btn btn-secondary" onclick="showImages('latest')">Latest</button>
+          <button class="btn btn-success" onclick="showImages('bestseller')">Bestseller</button>
+        </div>
+        
+        <!-- Image Section -->
+        <div class="row g-4" id="image-container">
+          <!-- Dynamic images and text will be inserted here -->
+        </div>
+      </div>
+    
+
+
+      <!-- cta section -->
+         <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="cta-content">
+      <h1>Discover the Elegance</h1>
+      <p>Experience the finest quality with our exclusive Kashmiri shawls. Shop now and embrace the tradition.</p>
+      <a href="#shop-now" class="btn btn-primary">Shop Now</a>
+      <a href="#learn-more" class="btn btn-outline-light">Learn More</a>
+    </div>
+  </section>
+
+
+  <div class="container mt-5">
+    <!-- Owl Carousel Section -->
+    <div class="owl-carousel owl-theme">
+      <!-- Slide 1 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 1" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 2" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 3" />
+      </div>
+      <!-- Slide 4 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 4" />
+      </div>
+    </div>
+
+   
+  </div>
+
+   
+  
+<!-- google reviews -->
+<h2 class="text-center mt-5 why-heading">Real Customer Reviews</h2>
+<div class="container bgreviews mt-5">
+    <div class="row">
+        <!-- Left Side - Google Review Logo and Rating -->
+        <div class="col-md-6 googlereview">
+            <img src="images/google-logo-98341.png" alt="Google Logo" class="googlelogofull">
+            <div>
+                <b>Reviews</b>
+                <h5>4.9
+                    <span class="star-rating">
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                        <i class="fa-solid fa-star" style="color: #FFD43B;"></i>
+                    </span>
+                </h5>
+            </div>
+        </div>
+
+        <!-- Right Side - Button to Review on Google -->
+        <div class="col-md-6 text-md-end googlereview btn-center">
+            <a href="https://g.co/kgs/mMeX2Gd" class="btn btn-primary">Review on Google</a>
+        </div>
+    </div>
+</div>
+
+<!-- Review Cards Carousel -->
+<div class="container mt-5">
+    <div class="owl-carousel owl-theme my-custom-carousel">
+        <!-- First Review Card -->
+        <div class="my-carousel-item">
+            <div class="my-review-card">
+                <div class="my-review-header">
+                    <img src="images/gurpreet.jpg" alt="Reviewer Image 1" class="my-review-img">
+                    <img src="images/Google2016Circle.png" alt="Reviewer Image 1" class="my-review-img2">
+
+                    <div>
+                        <span class="my-review-name">Gunpreet
+                            
+                        </span>
+                        <i class="fa-solid fa-circle-check my-review-verified"></i> <br>
+                        <span class="my-review-date">5 days ago</span>
+
+                    </div>
+                    
+                </div>
+
+                <div class="my-review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="my-review-text">Thank you so much Gunpreet for making our vacation more memorable , tshirts were of excellent quality and you delivered them in such a short notice</p>
+                <div class="review-image">
+                    <img src="images/gurpreet.jpg" alt="Google Maps Review 1" />
+                  </div>
+                  
+            </div>
+        </div>
+
+        <!-- Second Review Card -->
+        <div class="my-carousel-item">
+            <div class="my-review-card">
+                <div class="my-review-header">
+                    <img src="images/profile2.jpg" alt="Reviewer Image 1" class="my-review-img">
+                    <img src="images/Google2016Circle.png" alt="Reviewer Image 1" class="my-review-img2">
+
+                    <div>
+                        <span class="my-review-name">Mohan Agrawal
+                            
+                        </span>
+                        <i class="fa-solid fa-circle-check my-review-verified"></i> <br>
+                        <span class="my-review-date">14 days ago</span>
+
+                    </div>
+                    
+                </div>
+
+                <div class="my-review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="my-review-text">You delivered beyond our expectation, as committed hoodies are warm and of excellent quality, Customer service was very good, you were always available to answer all the queries regarding the product</p>
+                <div class="review-image text-center">
+                    <img src="images/reviewsimg2.jpg" alt="Google Maps Review" />
+                  </div>
+            </div>
+        </div>
+
+        <!-- Third Review Card -->
+        <div class="my-carousel-item">
+            <div class="my-review-card">
+                <div class="my-review-header">
+                    <img src="images/profile3.jpg" alt="Reviewer Image 1" class="my-review-img">
+                    <img src="images/Google2016Circle.png" alt="Reviewer Image 1" class="my-review-img2">
+
+                    <div>
+                        <span class="my-review-name">Ravi Pathak
+                            
+                        </span>
+                        <i class="fa-solid fa-circle-check my-review-verified"></i> <br>
+                        <span class="my-review-date">23 days ago</span>
+
+                    </div>
+                    
+                </div>
+
+                <div class="my-review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="my-review-text">printing on the tshirt was very good, the hand feel of the cotton tshirt is very soft and the timeline in which you have delivered is commendable, looking forward to placing a bigger corporate order to you as discussed on phone</p>
+                <div class="review-image text-center">
+                    <img src="images/reviewsimg3.jpg" alt="Google Maps Review" />
+                  </div>
+            </div>
+        </div>
+
+        <div class="my-carousel-item">
+            <div class="my-review-card">
+                <div class="my-review-header">
+                    <img src="images/profile4.jpg" alt="Reviewer Image 1" class="my-review-img">
+                    <img src="images/Google2016Circle.png" alt="Reviewer Image 1" class="my-review-img2">
+
+                    <div>
+                        <span class="my-review-name">Akash Saini
+                            
+                        </span>
+                        <i class="fa-solid fa-circle-check my-review-verified"></i> <br>
+                        <span class="my-review-date">1 months ago</span>
+
+                    </div>
+                    
+                </div>
+
+                <div class="my-review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <p class="my-review-text">Got some custom T shirt printing for my restaurant price and quality is very reasonable</p>
+                <div class="review-image text-center">
+                    <img src="images/akash saini-reviews1.jpg" alt="Google Maps Review" />
+                    <img src="images/akash-saini-reviews2.jpg" alt="Google Maps Review" />
+
+                  </div>
+            </div>
+        </div>
+
+        <!-- Fourth Review Card -->
+        <div class="my-carousel-item">
+            <div class="my-review-card">
+                <div class="my-review-header">
+                    <img src="images/profilemohmad.png" alt="Reviewer Image 4" class="my-review-img">
+                    <img src="images/Google2016Circle.png" alt="Reviewer Image 4" class="my-review-img2">
+
+                    <div>
+                        <span class="my-review-name">Mohammad Ahtesham</span>
+                        <i class="fa-solid fa-circle-check my-review-verified"></i>
+                        <br>
+                        <span class="my-review-date">2 months ago</span>
+
+                    </div>
+                </div>
+                <div class="my-review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="my-review-text">Best quality tshirt printed.. thanks for the quick service.. delivered within 3 hrs....
+                    Thankyou</p>
+                    <div class="review-image text-center">
+                        <img src="images/mohmad-reviews.jpg" alt="Google Maps Review" />
+                      </div>
+            </div>
+        </div>
+
+
+
+           <!-- Fourth Review Card -->
+           <div class="my-carousel-item">
+            <div class="my-review-card">
+                <div class="my-review-header">
+                    <img src="images/profile megha.png" alt="Reviewer Image 4" class="my-review-img">
+                    <img src="images/Google2016Circle.png" alt="Reviewer Image 4" class="my-review-img2">
+
+                    <div>
+                        <span class="my-review-name">megha saxena</span>
+                        <i class="fa-solid fa-circle-check my-review-verified"></i>
+                        <br>
+                        <span class="my-review-date">2 months ago</span>
+
+                    </div>
+                </div>
+                <div class="my-review-rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+                <p class="my-review-text">Hi dear. I m so greatful to you. In a day u turned my idea into a tshirt and helped my son participate in his compitition. I just gave u my small thought but u turned it out for me and In a short time. Thanks a lot for all your efforts.
+                    Thankyou</p>
+                    <!-- <div class="review-image text-center">
+                        <img src="images/reviewsimg2.jpg" alt="Google Maps Review" />
+                      </div> -->
+            </div>
+        </div>
+        <!-- Add more reviews here similarly -->
+
+
+
+    </div>
+</div>
+
+
+
+<!-- faq section -->
+   <!-- FAQ Section -->
+   <div class="container faq-section">
+    <h2 class="faq-title">Kashmiri Shawls Related Frequently Asked Questions</h2>
+    <div class="accordion" id="faqAccordion">
+      <!-- Question 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            What makes Kashmiri Shawls unique?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+          data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Kashmiri shawls are unique because of their intricate designs, superior craftsmanship, and traditional handwork,
+            which have been passed down through generations in Kashmir.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            How can I buy authentic Kashmiri Shawls?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            To ensure authenticity, buy Kashmiri shawls from reputable online stores or directly from trusted artisans in
+            Kashmir.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+            aria-expanded="false" aria-controls="collapseThree">
+            Are Kashmiri Shawls suitable for all seasons?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, Kashmiri shawls are versatile. They are warm during the winter season and can also be styled fashionably in
+            the summer.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+            aria-expanded="false" aria-controls="collapseFour">
+            How do I care for my Kashmiri Shawl?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Kashmiri shawls should be dry cleaned or hand-washed with care. Avoid using harsh chemicals to maintain their
+            delicate embroidery and colors.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+            aria-expanded="false" aria-controls="collapseFive">
+            Can Kashmiri Shawls be customized?
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Yes, many artisans offer customization for Kashmiri shawls. You can request personalized designs or monograms for
+            gifting purposes.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact us section -->
+     <!-- Section Title -->
+  <h2 class="contact-title">Contact Us</h2>
+
+  <!-- Contact Us Section -->
+  <div class="container contact-section">
+    <div class="contact-container">
+      <!-- Left Side (Description & Contact Details) -->
+      <div class="contact-left">
+        <h4>We'd Love to Hear From You!</h4>
+        <p>
+          Have questions about Kashmiri Shawls or our services? Reach out to our team for assistance. We are happy to help!
+        </p>
+        <div class="mt-3">
+          <p><strong>Mobile Number:</strong> +91 123-456-7890</p>
+          <p><strong>Email:</strong> contact@yourwebsite.com</p>
+        </div>
+        <div class="social-icons mt-3">
+          <a href="#" class="text-decoration-none">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" class="text-decoration-none">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right Side (Google Map Embed) -->
+      <div class="contact-right">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509784!2d144.9537353153168!3d-37.8162791797516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5772d10b6c6b3b!2sMelbourne+VIC+3000!5e0!3m2!1sen!2sau!4v1671857846574!5m2!1sen!2sau"
+        ></iframe>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- blog section -->
+    <!-- Blog Section Title -->
+  <h2 class="blog-title">Explore Kashmiri Shawl Stories</h2>
+
+  <!-- Blog Section Container -->
+  <div class="container blog-section p-3">
+    <div class="row g-4 justify-content-center">
+      <!-- Blog Card 1 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card blog-card shadow-sm">
+          <img src="https://source.unsplash.com/500x300/?shawl" class="blog-img" alt="Kashmiri Shawl Image">
+          <div class="blog-content">
+            <h5 class="card-title">The Art of Weaving Kashmiri Shawls</h5>
+            <p class="card-text">Explore the intricate art of weaving and the rich history of Kashmiri shawls in modern fashion.</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 2 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card blog-card shadow-sm">
+          <img src="https://source.unsplash.com/500x300/?craft" class="blog-img" alt="Kashmiri Shawl Craft">
+          <div class="blog-content">
+            <h5 class="card-title">Kashmiri Shawls in the Global Market</h5>
+            <p class="card-text">Learn how Kashmiri shawls are shaping international trends and style statements.</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 3 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card blog-card shadow-sm">
+          <img src="https://source.unsplash.com/500x300/?textile" class="blog-img" alt="Kashmiri Textile Designs">
+          <div class="blog-content">
+            <h5 class="card-title">Unique Kashmiri Designs & Patterns</h5>
+            <p class="card-text">Dive into the vibrant patterns that make Kashmiri shawls iconic worldwide.</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Blog Card 4 -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <div class="card blog-card shadow-sm">
+          <img src="https://source.unsplash.com/500x300/?fashion" class="blog-img" alt="Shawls in Fashion">
+          <div class="blog-content">
+            <h5 class="card-title">Modern Trends in Kashmiri Shawls</h5>
+            <p class="card-text">Discover how modern designers are incorporating Kashmiri shawls into everyday fashion trends.</p>
+            <a href="#" class="btn btn-primary btn-sm mt-2">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer>
+    <div class="footer-container bg-dark text-light pt-5 pb-3">
+      <div class="container">
+        <div class="row">
+          <!-- Logo & Description Section -->
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h4 class="text-uppercase mb-2">Kashmiri Shawls</h4>
+            <p>
+              Bringing the heritage and elegance of Kashmiri Shawls to your wardrobe. Explore timeless designs with modern trends.
+            </p>
+          </div>
+  
+          <!-- Quick Links Section -->
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="text-uppercase mb-2">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none">About</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Blog</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Gallery</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+  
+          <!-- Social Media & Contact Details Section -->
+          <div class="col-12 col-md-4 mb-3 mb-md-0">
+            <h5 class="text-uppercase mb-2">Contact Details</h5>
+            <p>
+              <i class="fas fa-phone-alt me-2"></i> Phone: +91 12345 67890
+            </p>
+            <p>
+              <i class="fas fa-envelope me-2"></i> Email: contact@kashmirishawls.com
+            </p>
+            <p>
+              <i class="fas fa-map-marker-alt me-2"></i> Address: House No. 123, Dal Lake Road, Srinagar, Kashmir
+            </p>
+            <div class="social-icons mt-2">
+              <a href="#" class="text-light me-2">
+                <i class="fab fa-facebook fa-lg"></i>
+              </a>
+              <a href="#" class="text-light me-2">
+                <i class="fab fa-twitter fa-lg"></i>
+              </a>
+              <a href="#" class="text-light me-2">
+                <i class="fab fa-instagram fa-lg"></i>
+              </a>
+              <a href="#" class="text-light me-2">
+                <i class="fab fa-youtube fa-lg"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Copyright Section -->
+        <div class="text-center pt-3 mt-4 border-top text-sm">
+          &copy; <strong>2024 Kashmiri Shawls. All Rights Reserved.</strong>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+       <!-- JavaScript -->
+  <script>
+    // Data for different categories
+    const imageData = {
+      featured: [
+        { img: 'https://via.placeholder.com/300x200?text=Featured+1', text: 'Featured Item 1' },
+        { img: 'https://via.placeholder.com/300x200?text=Featured+2', text: 'Featured Item 2' },
+        { img: 'https://via.placeholder.com/300x200?text=Featured+3', text: 'Featured Item 3' },
+        { img: 'https://via.placeholder.com/300x200?text=Featured+4', text: 'Featured Item 4' }
+      ],
+      latest: [
+        { img: 'https://via.placeholder.com/300x200?text=Latest+1', text: 'Latest Item 1' },
+        { img: 'https://via.placeholder.com/300x200?text=Latest+2', text: 'Latest Item 2' },
+        { img: 'https://via.placeholder.com/300x200?text=Latest+3', text: 'Latest Item 3' },
+        { img: 'https://via.placeholder.com/300x200?text=Latest+4', text: 'Latest Item 4' }
+      ],
+      bestseller: [
+        { img: 'https://via.placeholder.com/300x200?text=Bestseller+1', text: 'Bestseller Item 1' },
+        { img: 'https://via.placeholder.com/300x200?text=Bestseller+2', text: 'Bestseller Item 2' },
+        { img: 'https://via.placeholder.com/300x200?text=Bestseller+3', text: 'Bestseller Item 3' },
+        { img: 'https://via.placeholder.com/300x200?text=Bestseller+4', text: 'Bestseller Item 4' }
+      ]
+    };
+
+    // Function to display images based on the selected category
+    function showImages(category) {
+      const container = document.getElementById('image-container');
+      container.innerHTML = ''; // Clear previous content
+
+      imageData[category].forEach(item => {
+        const col = document.createElement('div');
+        col.className = 'col-6 col-md-3';
+        col.innerHTML = `
+          <div class="image-card">
+            <img src="${item.img}" alt="${item.text}">
+            <h5>${item.text}</h5>
+          </div>
+        `;
+        container.appendChild(col);
+      });
+    }
+
+    // Display default category on page load
+    showImages('featured');
+  </script>
+
+
+
+ <!-- JavaScript -->
+ <script>
+    $(document).ready(function () {
+      // Initialize Owl Carousel
+      var owl = $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false, // Disable default navigation buttons
+        responsive: {
+          0: {
+            items: 1,
+          },
+          576: {
+            items: 2,
+          },
+          768: {
+            items: 3,
+          },
+          992: {
+            items: 4,
+          },
+        },
+      });
+
+      // Left button click
+      $(".left-btn").click(function () {
+        owl.trigger("prev.owl.carousel");
+      });
+
+      // Right button click
+      $(".right-btn").click(function () {
+        owl.trigger("next.owl.carousel");
+      });
+    });
+  </script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

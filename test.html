@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive Owl Carousel with Centered Arrows</title>
+
+  <!-- Owl Carousel CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+  />
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Owl Carousel JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <style>
+
+    /* Owl Carousel Styles */
+    .owl-carousel .item img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    /* Title Below the Carousel */
+    .carousel-title {
+      text-align: center;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 15px 0;
+      color: #333;
+    }
+
+    /* Arrow Buttons Styling - Centered Over the Image */
+    .custom-nav-btn {
+      position: absolute;
+      top: 15%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 50%;
+      transition: background 0.3s ease;
+      z-index: 1000;
+    }
+
+    /* Left arrow */
+    .custom-nav-btn.left-btn {
+      left: 10px;
+    }
+
+    /* Right arrow */
+    .custom-nav-btn.right-btn {
+      right: 10px;
+    }
+
+    .custom-nav-btn:hover {
+      background: #555;
+    }
+
+    /* Responsive Adjustments */
+    @media (max-width: 768px) {
+      .item img {
+        height: 200px;
+      }
+
+      .carousel-title {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <!-- Owl Carousel Section -->
+    <div class="owl-carousel owl-theme">
+      <!-- Slide 1 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 1" />
+      </div>
+      <!-- Slide 2 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 2" />
+      </div>
+      <!-- Slide 3 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 3" />
+      </div>
+      <!-- Slide 4 -->
+      <div class="item">
+        <img src="https://via.placeholder.com/800x400" alt="Image 4" />
+      </div>
+    </div>
+
+    <!-- Title Section -->
+    <div class="carousel-title">Discover Our Exclusive Collection</div>
+
+    <!-- Left & Right Arrow Buttons -->
+    <button class="custom-nav-btn left-btn">⟨</button>
+    <button class="custom-nav-btn right-btn">⟩</button>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    $(document).ready(function () {
+      // Initialize Owl Carousel
+      var owl = $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        nav: false, // Disable default navigation buttons
+        responsive: {
+          0: {
+            items: 1,
+          },
+          576: {
+            items: 2,
+          },
+          768: {
+            items: 3,
+          },
+          992: {
+            items: 4,
+          },
+        },
+      });
+
+      // Left button click
+      $(".left-btn").click(function () {
+        owl.trigger("prev.owl.carousel");
+      });
+
+      // Right button click
+      $(".right-btn").click(function () {
+        owl.trigger("next.owl.carousel");
+      });
+    });
+  </script>
+</body>
+</html>
