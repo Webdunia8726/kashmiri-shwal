@@ -32,21 +32,19 @@ body {
     color: white !important;
 }
 
-.social-icons i:hover {
-    color:white;
-}
+
 
 /* Navbar styles */
 .navbar {
-    background-color: #007bff;
+    background-color: white;
     z-index: 1020;
     position: sticky;
     top: 0; /* Ensures it stays below the top header */
 }
 
 .navbar .navbar-brand {
-    color: #fff;
     font-weight: bold;
+    color: black;
 }
 
 .navbar .navbar-brand:hover {
@@ -54,7 +52,7 @@ body {
 }
 
 .navbar-nav .nav-link {
-    color: #fff;
+    color: black !important;
 }
 
 .navbar-nav .nav-link:hover {
@@ -183,7 +181,7 @@ padding: 10px;
     /* CTA Section Styles */
     .cta-section {
         position: relative;
-        background: url('https://via.placeholder.com/1920x1080?text=Background+Image') no-repeat center center fixed;
+        background: url('/images/shawal4.webp') no-repeat center center fixed;
         background-size: cover;
         color: #fff;
         text-align: center;
@@ -484,7 +482,6 @@ padding: 10px;
   .social-icons i {
     font-size: 20px;
     margin: 0 8px;
-    color: #e00f0f !important;
     transition: color 0.3s ease;
   }
 
